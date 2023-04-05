@@ -45,7 +45,7 @@ Bulldog Billionaires is a collection of<br/>
  2,000 randomly generated NFTs that<br/>
   exist on the Solana Blockchain.
   </p>
-  <a href="" className="text-center bg-purple-700 py-3 px-9 text-white font-normal w-[180px] h-[50px] m-auto rounded-lg relative right-10 bottom-10">Send Message</a>
+  <a href="" className="text-center bg-purple-700 py-3 px-9 text-white font-normal w-[180px] h-[50px] m-auto rounded-lg relative right-10 bottom-10">Visit Website</a>
 </div>
     </div>
     <div className='flex flex-row gap-20 m-auto'>
@@ -53,7 +53,7 @@ Bulldog Billionaires is a collection of<br/>
   <h3 className='text-white font-bold text-2xl'>T-connect</h3>
   <p className='text-white font-normal'>T-connect is an NFT Marketplace<br/> platform where users can lend and<br/> rent NFTs.
 </p>
-<a href="" className="text-center bg-purple-700 py-3 px-9 text-white font-normal w-[180px] h-[50px] m-auto rounded-lg relative right-10 bottom-10">Send Message</a>
+<a href="" className="text-center bg-purple-700 py-3 px-9 text-white font-normal w-[180px] h-[50px] m-auto rounded-lg relative right-10 bottom-10">Visit Website</a>
 </div>
 <img src={secondImage} alt="mask group" className='w-[450px] h-[300px]'/>
 </div>
