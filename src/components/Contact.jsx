@@ -6,7 +6,7 @@ const color = {
 
 const Contact = () => {
   return (
-    <div className="h-screen w-screen" style={color}>
+    <div className="h-screen w-screen sm:h-full sm:w-full" style={color}>
       <>
         <nav className="py-8">
           <ul className="flex flex-row gap-6 justify-center text-white font-normal text-sm sm:flex sm:flex-col">
@@ -32,20 +32,33 @@ const Contact = () => {
         </nav>
         <Outlet />
       </>
-      <div className="py-3 flex flex-col ">
-        <h3 className="font-bold text-white text-center text-3xl">
+      <div className="py-3 flex flex-col sm:flex sm:flex-col sm:py-3">
+        <h3 className="font-bold text-white text-center text-3xl sm:font-semibold sm:text-white sm:text-md sm:text-center">
           Leave us a message
         </h3>
-        <div className="flex flex-col gap-4 py-12">
+        <div className="flex flex-col gap-4 py-12 sm:flex sm:flex-col sm:gap-3">
           <input
             placeholder="Enter your Email"
-            className="border-white bg-black border-2 w-[500px] h-[50px] rounded-xl m-auto placeholder:relative placeholder:left-3 placeholder:text-gray-500 text-white"
+            className="border-white sm:border-white bg-black sm:bg-black 
+            border-2 sm:border-2 w-[500px] sm:w-[250px] h-[50px] rounded-xl
+             sm:rounded-xl m-auto sm:m-auto placeholder:relative sm:placeholder:relative placeholder:left-3 sm:placeholder:left
+             placeholder:text-gray-500 sm:placeholder:text-gray-500 text-white sm:text-white"
           />
           <input
             placeholder="Enter your message"
-            className="border-white bg-black border-2 w-[500px] h-[250px] rounded-xl m-auto placeholder:relative placeholder:bottom-[100px] placeholder:left-3 placeholder:text-gray-500 text-white"
+            className="border-white sm:border-white bg-black sm:bg-black border-2 sm:border-2
+             w-[500px] sm:w-[250px] h-[250px] sm:h-[100px]
+             rounded-xl sm:rounded-xl m-auto sm:m-auto placeholder:relative sm:placeholder:relative
+              placeholder:bottom-[100px] sm:placeholder:bottom-[30px] placeholder:left-3 sm:placeholder:left-3
+              placeholder:text-gray-500 sm:placeholder:text-gray-500 text-white sm:text-white"
           />
-          <a href="" className="text-center bg-purple-700 py-3 px-9 text-white font-normal w-[180px] h-[50px] m-auto rounded-lg">Send Message</a>
+          <a
+            href=""
+            className="text-center bg-purple-700 py-3 px-9 sm:py-2 sm:my-4 text-white font-normal sm:text-sm
+             w-[180px] sm:w-[180px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+          >
+            Send Message
+          </a>
         </div>
       </div>
     </div>

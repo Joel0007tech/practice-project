@@ -8,8 +8,8 @@ const Services = () => {
   return (
     <div style={color} className='h-screen w-screen'>
     <>
-    <nav className='py-3'>
-      <ul className='flex flex-row gap-4 justify-center text-white font-bold text-sm sm:flex sm:flex-col'>
+    <nav className='py-8'>
+      <ul className='flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col'>
         <li className='hover:border-solid hover:border-b-4 hover:border-yellow-300 pb-2'>
           <Link to="/">Home</Link>
         </li>
@@ -32,6 +32,11 @@ const Services = () => {
     </nav>
     <Outlet />
   </>
+  <h3 className='font-bold text-2xl text-white text-center'>our services</h3>
+  <h4 className='font-bold text-2xl text-white text-center py-10'>Product Strategy</h4>
+  <p className='font-bold text-xl text-white text-center py-10'>As a data-driven company, one of our major services is to use desk research<br/>
+  to assess all the market data that is currently accessible in order to create<br/>
+  the optimum alignment between your organization's demand and those of<br/> the product.</p>
   </div>
   )
 }

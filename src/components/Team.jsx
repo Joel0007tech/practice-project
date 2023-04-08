@@ -15,7 +15,7 @@ const Team = () => {
     <div style={color} className="w-full h-full">
       <>
         <nav className="py-8">
-          <ul className="flex flex-row gap-4 justify-center text-white font-bold text-sm sm:flex sm:flex-col">
+          <ul className="flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col">
             <li className="hover:border-solid hover:border-b-4 hover:border-yellow-300 pb-2">
               <Link to="/">Home</Link>
             </li>
@@ -45,7 +45,7 @@ const Team = () => {
         <div className="flex flex-col gap-8 py-6">
           <div className="flex flex-row justify-center gap-20">
             <div className="flex flex-col gap-1">
-            <img src={firstImage} alt="this is for ats"/>
+            <img src={firstImage} alt="this is for ats" className="text-blue bg-fuchsia-700 w-[270px] h-[27  0px]"/>
             <p className="ml-[150px] text-white">A.T.S</p>
             <p className="ml-[150px] text-white">UX Designer/Brand</p>
             </div>

@@ -10,8 +10,8 @@ const Works = () => {
   return (
     <div style={color} className='w-full h-full'>
     <>
-    <nav className='py-6'>
-      <ul className='flex flex-row gap-4 justify-center text-white font-bold text-sm sm:flex sm:flex-col'>
+    <nav className='py-8'>
+      <ul className='flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col'>
         <li className='hover:border-solid hover:border-b-4 hover:border-yellow-300 pb-2'>
           <Link to="/">Home</Link>
         </li>
@@ -35,7 +35,7 @@ const Works = () => {
     <Outlet />
   </>
   <h3 className='text-center text-white font-bold text-2xl'>Our Works</h3>
-  <div className='flex flex-col gap-20 px-20 py-8'>
+  <div className='flex flex-col gap-20 px-20 py-8 sm:flex sm:flex-row sm:gap-5 sm:py-6'>
     <div className='flex flex-row gap-20 m-auto'>
 <img src={firstImage} alt="mask group" className='w-[450px] h-[300px]'/>
 <div className='flex flex-col gap-6'>

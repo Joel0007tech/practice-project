@@ -10,7 +10,7 @@ const Home = () => {
     <>
     <nav>
       <ul className='flex flex-col gap-4 text-center text-white font-bold text-2xl'>
-        <li>
+        <li className="text-white hover:text-[#FED42A]">
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -27,6 +27,9 @@ const Home = () => {
         </li>
         <li>
           <Link to="/contact"target='_blank'>Contact Us</Link>
+        </li>
+        <li>
+          <Link to="/footer"target='_blank'>Footer</Link>
         </li>
       </ul>
     </nav>
