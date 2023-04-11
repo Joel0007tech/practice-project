@@ -6,7 +6,7 @@ const color ={
 
 const Services = () => {
   return (
-    <div style={color} className='h-screen w-screen'>
+    <div style={color} className='h-screen w-screen sm:w-full sm:h-full'>
     <>
     <nav className='py-8'>
       <ul className='flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col'>
@@ -33,10 +33,14 @@ const Services = () => {
     <Outlet />
   </>
   <h3 className='font-bold text-2xl text-white text-center'>our services</h3>
-  <h4 className='font-bold text-2xl text-white text-center py-10'>Product Strategy</h4>
-  <p className='font-bold text-xl text-white text-center py-10'>As a data-driven company, one of our major services is to use desk research<br/>
+  <h4 className='font-bold text-2xl sm:text-sm text-white text-center sm:text-center py-10 sm:py-2'>Product Strategy</h4>
+  <p className='font-bold text-xl sm:text-sm text-white text-center sm:text-center py-10 sm:py-2 sm:font-normal'>
+    As a data-driven company, one of our major services is to use desk research<br/>
   to assess all the market data that is currently accessible in order to create<br/>
   the optimum alignment between your organization's demand and those of<br/> the product.</p>
+  <div className='2xl:hidden sm:visible'>
+    <p className='text-white'>acting</p>
+  </div>
   </div>
   )
 }
