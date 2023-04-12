@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import {FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const color = {
   backgroundColor: "#383838",
 };
@@ -62,6 +63,12 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <footer className='
+             top-[400px]
+             flex flex-row relative justify-center'>
+    <a href=''><FaAngleLeft className='text-3xl'/></a>
+    <a href=''><FaAngleRight className='text-3xl'/></a>
+  </footer>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import secondImage from "../assets/HARBZY (1).png";
 import thirdImage from "../assets/HARBZY.png";
 import fourthImage from "../assets/HARBZY (3).png"
 import fifthImage from "../assets/HARBZY (2).png"
-
+import {FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const color = {
   backgroundColor: "#383838",
 };
@@ -73,6 +73,12 @@ const Team = () => {
           </div>
         </div>
       </div>
+      <footer className='
+             top-[400px]
+             flex flex-row relative justify-center'>
+    <a href=''><FaAngleLeft className='text-3xl'/></a>
+    <a href=''><FaAngleRight className='text-3xl'/></a>
+  </footer>
     </div>
   );
 };

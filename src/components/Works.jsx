@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import firstImage from "../assets/Mask group.png";
 import secondImage from "../assets/Mask group (1).png";
+import {FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const color = {
   backgroundColor: "#383838",
 };
@@ -100,6 +101,12 @@ const Works = () => {
           />
         </div>
       </div>
+      <footer className='
+             top-[400px]
+             flex flex-row relative justify-center'>
+    <a href=''><FaAngleLeft className='text-3xl'/></a>
+    <a href=''><FaAngleRight className='text-3xl'/></a>
+  </footer>
     </div>
   );
 };
