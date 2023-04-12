@@ -33,7 +33,8 @@ const Contact = () => {
         <Outlet />
       </>
       <div className="py-3 flex flex-col sm:flex sm:flex-col sm:py-3">
-        <h3 className="font-bold text-white text-center text-3xl sm:font-semibold sm:text-white sm:text-md sm:text-center">
+        <h3 className="font-bold text-white text-center text-3xl
+         sm:font-normal sm:text-white sm:text-md sm:text-center">
           Leave us a message
         </h3>
         <div className="flex flex-col gap-4 py-12 sm:flex sm:flex-col sm:gap-3">

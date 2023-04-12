@@ -7,7 +7,7 @@ const color ={
 
 const About = () => {
   return (
-    <div className='w-screen h-screen' style={color}>
+    <div className='w-screen h-screen sm:w-full sm:h-full'style={color}>
     <>
     <nav className='py-8'>
       <ul className='flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col'>
@@ -34,11 +34,11 @@ const About = () => {
     <Outlet />
   </>
   <h3 className='font-bold text-center text-white text-2xl py-8'>About us</h3>
-  <div className="flex justify-center py-5">
-  <div className="w-1/2 animate__animated animate__fadeInLeft flex flex-row justify-center">
+  <div className="flex justify-center py-5 sm:flex sm:flex-col sm:gap-10">
+  <div className="w-1/2 animate__animated animate__fadeInLeft flex flex-row justify-center sm:m-auto">
   <img src={avatar} alt=''/>
   </div>
-  <div className="w-1/2 animate__animated animate__fadeInRight">
+  <div className="w-1/2 animate__animated animate__fadeInRight sm:m-auto">
     <h2 className='text-white font-normal'>We are a digital agency committed to delivering exceptional results for<br/>
      our clients. Our team of experts specializes in creating customized<br/>
       digital solutions that drive business growth. With a focus on innovative<br/>

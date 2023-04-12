@@ -38,10 +38,11 @@ const Services = () => {
     As a data-driven company, one of our major services is to use desk research<br/>
   to assess all the market data that is currently accessible in order to create<br/>
   the optimum alignment between your organization's demand and those of<br/> the product.</p>
-  <div className='2xl:hidden sm:visible'>
-    <p className='text-white'>acting</p>
+  <div class="hidden sm:block md:hidden">
+  <p className='text-white'>acting</p>
+</div>
   </div>
-  </div>
+ 
   )
 }
 

@@ -42,25 +42,25 @@ const Works = () => {
           <img
             src={firstImage}
             alt="mask group"
-            className="w-[450px] h-[300px] sm:m-auto sm:h-[200px] sm:w-[350px]"
+            className="w-[450px] h-[300px] sm:m-auto sm:h-[150px] sm:w-[350px]"
           />
           <div className="flex flex-col gap-6 sm:flex sm:flex-col">
             <h3 className="text-white font-bold text-2xl sm:text-center sm:text-white sm:font-bold sm:text-xl">
               Bulldog <br className="sm:hidden" />
               Billionaires
             </h3>
-            <p className="text-white font-normal sm:text-center">
-              Bulldog Billionaires is a collection of
-              <br />
-              2,000 randomly generated NFTs that
-              <br />
+            <p className="text-white font-normal sm:text-center sm:leading-relaxed">
+              Bulldog Billionaires is a collection <br className="sm:block"/> 
+              of <br className="hidden sm:hidden"/>
+              2,000 randomly generated <br className="sm:block"/> NFTs 
+              that <br className="hidden sm:hidden"/>
               exist on the Solana Blockchain.
             </p>
             <a
               href=""
               className="text-center bg-purple-700 py-3 px-9 sm:py-3 sm:px-9 text-white 
                 font-normal w-[180px] m-auto sm:m-auto rounded-lg relative
-                  right-10 bottom-10 sm:relative sm:right-0 sm:top-2 "
+                  right-10 bottom-10 sm:relative sm:right-0 sm:top-2 sm:animate-pulse"
             >
               Visit Website
             </a>
@@ -68,28 +68,35 @@ const Works = () => {
          
         </div>
        
-        <div className="flex flex-row gap-20 m-auto sm:flex sm:flex-col sm:gap-20 sm:m-auto">
-          <div className="flex flex-col gap-6 sm:flex sm:flex-col sm:gap-6">
-            <h3 className="text-white font-bold text-2xl sm:text-white sm:font-bold sm:text-center">
+        <div className="flex flex-row gap-20 m-auto sm:flex sm:flex-col sm:gap-4 sm:m-auto sm:py-6">
+          <div className="flex flex-col gap-6 sm:flex sm:flex-col sm:gap-2 sm:m-auto">
+          <img
+            src={secondImage}
+            alt="mask group"
+            className="w-[450px] h-[300px] hidden sm:block 2xl:hidden sm:h-[200px] sm:w-[350px] sm:auto sm:py-6"
+          />
+            <h3 className="text-white font-bold text-2xl sm:text-white sm:font-bold sm:text-center sm:relative
+             sm:bottom-4">
               T-connect
             </h3>
-            <p className="text-white font-normal">
+            <p className="text-white font-normal sm:text-center">
               T-connect is an NFT Marketplace
               <br /> platform where users can lend and
-              <br /> rent NFTs.
+              <br className="hidden sm:hidden"/> rent NFTs.
             </p>
             <a
               href=""
               className="text-center bg-purple-700 py-3 px-9 text-white font-normal
-                 w-[180px] h-[50px] m-auto rounded-lg relative right-10 bottom-10"
-            >
+                 w-[180px] h-[50px] m-auto rounded-lg relative right-10 bottom-10 sm:m-auto sm:relative sm:right-0 sm:top-5 
+                 sm:animate-pulse"
+          >
               Visit Website
             </a>
           </div>
           <img
             src={secondImage}
             alt="mask group"
-            className="w-[450px] h-[300px]"
+            className="w-[450px] h-[300px] sm:hidden"
           />
         </div>
       </div>
