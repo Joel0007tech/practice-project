@@ -52,10 +52,10 @@ const About = () => {
   </div>
 </div>
 <footer className='
-             top-[400px]
+             top-[250px] sm:top-0
              flex flex-row relative justify-center'>
-    <a href=''><FaAngleLeft className='text-3xl'/></a>
-    <a href=''><FaAngleRight className='text-3xl'/></a>
+    <Link to="/works" target='_blank'><FaAngleLeft className='text-3xl'/></Link>
+    <Link to="/team" target='_blank'><FaAngleRight className='text-3xl'/></Link>
   </footer>
   </div>
 

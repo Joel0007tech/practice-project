@@ -7,7 +7,7 @@ const color ={
 
 const Services = () => {
   return (
-    <div style={color} className='h-screen w-screen sm:w-full sm:h-full'>
+    <div style={color} className='h-screen w-screen sm:w-screen sm:h-screen'>
     <>
     <nav className='py-8'>
       <ul className='flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col'>
@@ -43,10 +43,10 @@ const Services = () => {
   <p className='text-white'>acting</p>
 </div>
 <footer className='
-             top-[400px]
+             top-[250px] sm:top-[100px]
              flex flex-row relative justify-center'>
-    <a href=''><FaAngleLeft className='text-3xl'/></a>
-    <a href=''><FaAngleRight className='text-3xl'/></a>
+   <Link to="/services" target='_blank'><FaAngleLeft className='text-3xl'/></Link>
+    <Link to="/works" target='_blank'><FaAngleRight className='text-3xl'/></Link>
   </footer>
   </div>
  

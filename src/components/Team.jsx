@@ -74,10 +74,9 @@ const Team = () => {
         </div>
       </div>
       <footer className='
-             top-[400px]
              flex flex-row relative justify-center'>
-    <a href=''><FaAngleLeft className='text-3xl'/></a>
-    <a href=''><FaAngleRight className='text-3xl'/></a>
+    <Link to="/about" target='_blank'><FaAngleLeft className='text-3xl'/></Link>
+    <Link to="/contact" target='_blank'><FaAngleRight className='text-3xl'/></Link>
   </footer>
     </div>
   );

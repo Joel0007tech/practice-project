@@ -101,11 +101,10 @@ const Works = () => {
           />
         </div>
       </div>
-      <footer className='
-             top-[400px]
+      <footer className='py-5
              flex flex-row relative justify-center'>
-    <a href=''><FaAngleLeft className='text-3xl'/></a>
-    <a href=''><FaAngleRight className='text-3xl'/></a>
+     <Link to="/services" target='_blank'><FaAngleLeft className='text-3xl'/></Link>
+    <Link to="/about" target='_blank'><FaAngleRight className='text-3xl'/></Link>
   </footer>
     </div>
   );

@@ -7,7 +7,7 @@ const color ={
 
 const Home = () => {
   return (
-    <div style={color} className='w-screen h-screen'>
+    <div style={color} className='w-screen h-screen sm:h-screen sm:w-screen'>
     <>
     <nav>
       <ul className='flex flex-col gap-4 text-center text-white font-bold text-2xl'>
@@ -37,11 +37,10 @@ const Home = () => {
     <Outlet />
   </>
   <footer className='
-             top-[400px]
+             top-[400px] sm:top-[350px]
              flex flex-row relative justify-center'>
-    <a href=''><FaAngleLeft className='text-3xl'/></a>
-    <a href=''><FaAngleRight className='text-3xl'/></a>
-   
+    <Link to="/" target='_blank'><FaAngleLeft className='text-3xl'/></Link>
+    <Link to="/services" target='_blank'><FaAngleRight className='text-3xl'/></Link>
   </footer>
   </div>
   )
