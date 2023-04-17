@@ -1,17 +1,60 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { Outlet,Link } from 'react-router-dom'
-import {FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import {FaStream, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import avatar from "../assets/avatar.png"
 const color ={
     backgroundColor:"#383838"
   }
 
 const About = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className='w-screen h-screen sm:w-full sm:h-full'style={color}>
+                <div className="hidden 2xl:hidden sm:block overflow-hidden
+            sm:border-b-2 sm:border-white sm:rounded-b-md">
+              <div>
+              <h3 onClick={() => setOpen(!open)}>
+      <FaStream
+        className="cursor-pointer sm:cursor-pointer text-white sm:text-white
+     text-4xl sm:text-3xl fixed sm:fixed right-60 sm:right-10 font-normal pt-3 
+     ]
+    "
+      />
+    </h3>
+              </div>
+    
+    {open && (
+      <div className='relative bottom-2 left-4'>
+        <ul
+          className="flex justify-center flex-col float-left text-center cursor-pointer
+        pt-3"
+        >
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="text-white font-semibold text-sm">
+            <Link to="/services">Our services</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/works">Our works</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/team">Team</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul>
+      </div>
+    )}
+    </div>
     <>
     <nav className='py-8'>
-      <ul className='flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col'>
+      <ul className='flex flex-row gap-4 justify-center text-white
+      2xl:block sm:hidden font-normal text-sm sm:flex-col'>
         <li className='hover:border-solid hover:border-b-4 hover:border-yellow-300 pb-2'>
           <Link to="/">Home</Link>
         </li>
@@ -34,6 +77,7 @@ const About = () => {
     </nav>
     <Outlet />
   </>
+  <div className='sm:relative sm:bottom-14'>
   <h3 className='font-bold text-center text-white text-2xl py-8'>About us</h3>
   <div className="flex justify-center py-5 sm:flex sm:flex-col sm:gap-10">
   <div className="w-1/2 animate__animated animate__fadeInLeft flex flex-row justify-center sm:m-auto">
@@ -50,6 +94,8 @@ const About = () => {
          Let us help you reach your target audience and achieve your goals.
 </h2>
   </div>
+  </div>
+ 
 </div>
 <footer className='
              top-[250px] sm:top-0

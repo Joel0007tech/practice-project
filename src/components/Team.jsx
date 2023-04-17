@@ -1,21 +1,64 @@
-import React from "react";
+import {React, useState} from "react";
 import { Outlet, Link } from "react-router-dom";
 import firstImage from "../assets/A.T.S.png";
 import secondImage from "../assets/HARBZY (1).png";
 import thirdImage from "../assets/HARBZY.png";
 import fourthImage from "../assets/HARBZY (3).png"
 import fifthImage from "../assets/HARBZY (2).png"
-import {FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import {FaStream, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const color = {
   backgroundColor: "#383838",
 };
 
 const Team = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div style={color} className="w-full h-full">
+                <div className="hidden 2xl:hidden sm:block overflow-hidden
+            sm:border-b-2 sm:border-white sm:rounded-b-md">
+              <div>
+              <h3 onClick={() => setOpen(!open)}>
+      <FaStream
+        className="cursor-pointer sm:cursor-pointer text-white sm:text-white
+     text-4xl sm:text-3xl fixed sm:fixed right-60 sm:right-10 font-normal pt-3 
+     ]
+    "
+      />
+    </h3>
+              </div>
+    
+    {open && (
+      <div className='relative bottom-2 left-4'>
+        <ul
+          className="flex justify-center flex-col float-left text-center cursor-pointer
+        pt-3"
+        >
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="text-white font-semibold text-sm">
+            <Link to="/services">Our services</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/works">Our works</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/about">About Us</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/team">Team</Link>
+          </li>
+          <li className="text-white font-semibold text-sm ">
+            <Link to="/contact">Contact Us</Link>
+          </li>
+        </ul>
+      </div>
+    )}
+    </div>
       <>
         <nav className="py-8">
-          <ul className="flex flex-row gap-4 justify-center text-white font-normal text-sm sm:flex sm:flex-col">
+          <ul className="flex flex-row gap-4 justify-center text-white font-normal
+          2xl:block sm:hidden text-sm sm:flex-col">
             <li className="hover:border-solid hover:border-b-4 hover:border-yellow-300 pb-2">
               <Link to="/">Home</Link>
             </li>
@@ -38,7 +81,7 @@ const Team = () => {
         </nav>
         <Outlet />
       </>
-      <div className="py-4">
+      <div className="py-4 sm:relative sm:bottom-10">
         <h3 className="text-center text-white font-bold text-2xl">
           Meet the Team
         </h3>
