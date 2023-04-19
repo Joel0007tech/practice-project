@@ -1,13 +1,19 @@
 import { React, useState } from "react";
 import { FaStream, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Logo from "../assets/Group 3999.png"
 
 const Home = () => {
   const [open, setOpen] = useState(false);
+  const color ={
+    backgroundColor:"black"
+  }
 
   return (
     <div>
-      <div className="pt-6 bg-black h-screen w-screen sm:h-full sm:w-full">
+      <div className="pt-6h-screen w-screen sm:h-full sm:w-full" style={color}>
+        <div className="flex p-6">
+          <img src={Logo} alt="" className="px-20"/>
         <h3 onClick={() => setOpen(!open)}>
           <FaStream
             className="cursor-pointer sm:cursor-pointer text-white sm:text-white
@@ -15,6 +21,7 @@ const Home = () => {
         "
           />
         </h3>
+        </div>
         {open && (
           <div>
             <ul
@@ -42,6 +49,13 @@ const Home = () => {
             </ul>
           </div>
         )}
+        <section className=" bg-black">
+        <h2 className="text-white font-bold text-5xl text-center">
+          Bringing Beautiful <br/>
+          <span className="text-yellow-300">Web 3.0</span> Experiences<br/>
+          to life
+        </h2>
+        </section>
         <footer
         className="
              top-[150px] sm:top-[5px]
@@ -55,7 +69,6 @@ const Home = () => {
         </Link>
       </footer>
       </div>
-      
     </div>
   );
 };

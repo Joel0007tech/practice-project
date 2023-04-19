@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import { Outlet,Link } from 'react-router-dom'
 import {FaStream, FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import avatar from "../assets/avatar.png"
+import avatar from "../assets/Vector.png"
 const color ={
     backgroundColor:"#383838"
   }
@@ -81,7 +81,7 @@ const About = () => {
   <h3 className='font-bold text-center text-white text-2xl py-8'>About us</h3>
   <div className="flex justify-center py-5 sm:flex sm:flex-col sm:gap-10">
   <div className="w-1/2 animate__animated animate__fadeInLeft flex flex-row justify-center sm:m-auto">
-  <img src={avatar} alt=''/>
+  <img src={avatar} alt='vector' className='h-[200px] w-[180px]'/>
   </div>
   <div className="w-1/2 animate__animated animate__fadeInRight sm:m-auto">
     <h2 className='text-white font-normal'>We are a digital agency committed to delivering exceptional results for<br/>
