@@ -6,7 +6,7 @@ import Logo from "../assets/Group 3999.png"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const color ={
-    backgroundColor:"black"
+    backgroundColor:"#383838"
   }
 
   return (
@@ -62,7 +62,7 @@ const Home = () => {
              flex flex-row relative justify-center"
       >
         <Link to="/" target="_blank">
-          <FaAngleLeft className="text-3xl text-white" />
+          <FaAngleLeft className="text-3xl"/>
         </Link>
         <Link to="/services" target="_blank">
           <FaAngleRight className="text-3xl" />

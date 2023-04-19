@@ -2,6 +2,7 @@ import {React, useState} from "react";
 import { Outlet, Link } from "react-router-dom";
 import firstImage from "../assets/Mask group.png";
 import secondImage from "../assets/Mask group (1).png";
+import Logo from "../assets/Group 3999.png";
 import {FaStream, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const color = {
   backgroundColor: "#383838",
@@ -12,22 +13,19 @@ const Works = () => {
   return (
     <div style={color} className="w-full h-full sm:w-full sm:h-full">
           <div className="hidden 2xl:hidden sm:block overflow-hidden
-            sm:border-b-2 sm:border-white sm:rounded-b-md">
-              <div>
-              <h3 onClick={() => setOpen(!open)}>
+          sm:border-b-2 sm:border-white sm:rounded-b-md
+           ">
+              <div className="pb-4 pt-3">
       <FaStream
         className="cursor-pointer sm:cursor-pointer text-white sm:text-white
-     text-4xl sm:text-3xl fixed sm:fixed right-60 sm:right-10 font-normal pt-3 
-     ]
-    "
-      />
-    </h3>
+    sm:text-xl sm:float-right sm:mr-8 sm:mt-2 sm:font-normal"
+    onClick={() => setOpen(!open)} />
+    <img src={Logo} alt="logo" className='h-[30px] w-[80px] ml-6'/>
               </div>
-    
     {open && (
       <div className='relative bottom-2 left-4'>
         <ul
-          className="flex justify-center flex-col float-left text-center cursor-pointer
+          className="flex justify-center flex-col text-center cursor-pointer
         pt-3"
         >
           <li className="text-white font-semibold text-sm ">
