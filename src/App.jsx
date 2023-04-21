@@ -6,8 +6,6 @@ import Works from './components/Works';
 import About from './components/About';
 import Team from './components/Team';
 import Contact  from './components/Contact';
-import Footer from './components/Footer'
-
 
 
 export default function App(){
@@ -22,7 +20,6 @@ export default function App(){
           <Route path="/about" element={<About/>}/> 
           <Route path="/team" element={<Team/>}/> 
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="/footer" element={<Footer/>}/>
      </Routes>
   </BrowserRouter>
       </div>
