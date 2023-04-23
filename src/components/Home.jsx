@@ -25,7 +25,7 @@ const Home = () => {
         className="pt-6 h-full w-full sm:h-full sm:w-full sm:overflow-hidden"
         style={color}
       >
-        <div className=" p-6  hidden 2xl:hidden sm:block overflow-hidden
+        <div className=" p-6 overflow-hidden
             sm:border-b-2 sm:border-white sm:rounded-b-md">
           <div className="sm:pb-3 sm:pt-3 sm:flex">
             <img
@@ -35,13 +35,13 @@ const Home = () => {
             />
             <FaStream
               className="cursor-pointer sm:cursor-pointer text-white sm:text-white
-              sm:text-2xl fixed sm:fixed sm:right-10 font-normal sm:top-11 "
+              sm:text-2xl text-4xl fixed sm:fixed sm:right-10 right-60 font-normal sm:top-11 "
               onClick={() => setOpen(!open)}
             />
           </div>
         </div>
         {open && (
-          <div className="hidden 2xl:hidden sm:block overflow-hidden
+          <div className="overflow-hidden
           sm:border-b-2 sm:border-white sm:rounded-b-md">
             <ul
               className="flex justify-center flex-col gap-6 sm:gap-2 text-center cursor-pointer
@@ -80,7 +80,7 @@ const Home = () => {
         </div>
         <section>
           <h2
-            className="text-white font-semibold text-7xl sm:text-4xl sm:pt-4 text-center leading-tight"
+            className="text-white font-semibold text-7xl sm:text-4xl sm:pt-4 text-center leading-tight pt-8"
             style={Font}
           >
             Bringing Beautiful <br />
