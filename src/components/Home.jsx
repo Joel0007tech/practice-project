@@ -3,6 +3,9 @@ import { FaStream, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Logo from "../assets/Group 3999.png";
 import avatar from "../assets/avatar.png";
+import FirstIcon from "../assets/Group 3971.svg";
+import SecondIcon from "../assets/Vector.svg";
+import ThirdIcon from "../assets/Group.svg";
 import socialOne from "../assets/Vector (1).png";
 import socialTwo from "../assets/Vector (2).png";
 import socialThree from "../assets/Vector (3).png";
@@ -10,6 +13,8 @@ import socialFour from "../assets/Vector (4).png";
 import socialFive from "../assets/Vector (5).png";
 import objectFirst from "../assets/Vector 3.png";
 import objectSecond from "../assets/Ellipse 62.png";
+import firstImage from "../assets/Mask group.png";
+import secondImage from "../assets/Mask group (1).png";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -70,13 +75,13 @@ const Home = () => {
         )}
         <div
           className="border-[2px] border-purple-500 w-[45px] h-[280px] 
-        2xl:block sm:hidden float-right flex flex-col gap-4 pt-8"
+        2xl:block sm:hidden flex flex-col gap-4 pt-8 fixed right-1"
         >
-          <img src={socialOne} alt="" className="w-[30px] h-[30px] " />
-          <img src={socialTwo} alt="" className="w-[30px] h-[30px] " />
-          <img src={socialThree} alt="" className="w-[30px] h-[30px] " />
-          <img src={socialFour} alt="" className="w-[30px] h-[30px] " />
-          <img src={socialFive} alt="" className="w-[30px] h-[30px] " />
+          <img src={socialFive} alt="" className="w-[20px] h-[20px] m-auto" />
+          <img src={socialFour} alt="" className="w-[20px] h-[20px] m-auto" />
+          <img src={socialThree} alt="" className="w-[20px] h-[20px] m-auto" />
+          <img src={socialTwo} alt="" className="w-[20px] h-[20px] m-auto" />
+          <img src={socialOne} alt="" className="w-[15px] h-[20px] m-auto" />
         </div>
         <section>
           <h2
@@ -157,10 +162,11 @@ const Home = () => {
               className="border-[2px] border-gray-500 h-[350px] w-[280px] sm:h-[250px] sm:w-[250px] 
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
+              <img src={FirstIcon} alt="firsticon" className="m-auto"/>
               <h3 className="text-white text-center text-xl" style={Font}>
                 UI/UX Design
               </h3>
-              <p className="text-white leading-normal pt-10 text-center sm:text-sm sm:pt-2">
+              <p className="text-white leading-normal pt-10 text-sm text-center sm:text-sm sm:pt-2">
                 Unlock the full potential of your
                 <br />
                 product with our expert UI/UX
@@ -181,10 +187,11 @@ const Home = () => {
               className="border-[2px] border-gray-500 h-[350px] sm:h-[250px] sm:w-[250px] w-[280px]
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <h3 className="text-white text-center text-xl" style={Font}>
+              <img src={ThirdIcon} alt="thirdicon" className="m-auto pt-2"/>
+              <h3 className="text-white text-center text-xl pt-4" style={Font}>
                 Full Stack <br /> Web Development
               </h3>
-              <p className="text-white leading-normal pt-10 text-center sm:text-sm sm:pt-2">
+              <p className="text-white leading-normal pt-4 text-sm text-center sm:text-sm sm:pt-2">
                 Bring your online vision to life with
                 <br />
                 our professional web development
@@ -202,13 +209,14 @@ const Home = () => {
               </p>
             </div>
             <div
-              className="border-[2px] border-gray-500 h-[350px] w-[280px] sm:h-[250px] sm:w-[250px] 
+              className="border-[2px] border-gray-500 h-[350px] w-[300px] sm:h-[250px] sm:w-[250px] 
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <h3 className="text-white text-center text-xl" style={Font}>
+              <img src={SecondIcon} alt="secondicon" className="m-auto pt-2"/>
+              <h3 className="text-white text-center text-xl pt-6" style={Font}>
                 Smart Contract <br /> Integration
               </h3>
-              <p className="text-white leading-normal pt-10 text-center sm:text-sm sm:pt-2">
+              <p className="text-white leading-normal pt-4 text-sm text-center sm:text-sm sm:pt-2">
                 Our team of blockchain experts will
                 <br />
                 work with you to design and
@@ -272,6 +280,35 @@ const Home = () => {
               />
             </div>
           </div>
+          <div className="flex">
+            <div>
+              <h3 className="text-white font-bold text-lg" style={Font}>01. Research</h3>
+              <p className="text-white">We gather information about your target audience, your<br/>
+              product or service, and your competitors. This steps helps <br/>
+              us to identify the needs and goals  of users and to<br/>
+              develop a clear  understanding of the problem that the <br/>
+              product or service is trying to solve.</p>
+            </div>
+          </div>
+        </section>
+        <section className="pt-20">
+          <h3 className="text-white text-center text-4xl font-bold m-auto
+           border-b-[14px] sm:border-b-[10px] border-b-purple-700 w-[350px] pb-3" style={Font}>Some of our works</h3>
+           <div className="flex flex-col p-20 gap-14">
+          <img src={firstImage} alt="" className="w-[750px] h-[500px] m-auto relative right-36"/>
+          <img src={secondImage} alt="" className="w-[750px] h-[500px] m-auto relative left-40"/>
+           </div>
+           <div className="flex float-right relative right-60 bottom-14">
+            <a
+              href=""
+              className="text-center bg-purple-800 py-3 px-9 sm:py-2 sm:my-4
+              hover hover:bg-white hover:text-purple-800 text-white font-semibold sm:text-sm
+             w-[220px] sm:w-[250px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+              style={Font}
+            >
+              See our works here
+            </a>
+            </div>
         </section>
         <footer
           className="
