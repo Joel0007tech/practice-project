@@ -30,8 +30,10 @@ const Home = () => {
         className="pt-6 h-full w-full sm:h-full sm:w-full sm:overflow-hidden"
         style={color}
       >
-        <div className=" p-6 overflow-hidden
-            sm:border-b-2 sm:border-white sm:rounded-b-md">
+        <div
+          className=" p-6 overflow-hidden
+            sm:border-b-2 sm:border-white sm:rounded-b-md"
+        >
           <div className="sm:pb-3 sm:pt-3 sm:flex">
             <img
               src={Logo}
@@ -46,8 +48,10 @@ const Home = () => {
           </div>
         </div>
         {open && (
-          <div className="overflow-hidden
-          sm:border-b-2 sm:border-white sm:rounded-b-md">
+          <div
+            className="overflow-hidden
+          sm:border-b-2 sm:border-white sm:rounded-b-md"
+          >
             <ul
               className="flex justify-center flex-col gap-6 sm:gap-2 text-center cursor-pointer
             pt-18"
@@ -108,13 +112,18 @@ const Home = () => {
         <section className="pt-20">
           <div className="flex sm:flex-col">
             <div className="relative left-[300px] top-[150px] sm:left-3 sm:top-0">
-              <h3 className="text-white text-2xl font-semibold sm:text-center" style={Font}>
+              <h3
+                className="text-white text-2xl font-semibold sm:text-center"
+                style={Font}
+              >
                 Let's Play!
               </h3>
             </div>
-            <div className="border-[3px] rounded-t-xl border-solid 
+            <div
+              className="border-[3px] rounded-t-xl border-solid 
              border-white h-[350px] sm:h-[300px] w-[450px] sm:w-[250px]
-             m-auto pt-4">
+             m-auto pt-4"
+            >
               <img src={avatar} alt="ava" className="m-auto" />
             </div>
             <div className=" relative right-[300px] top-[150px] sm:top-3 sm:left-[80px]">
@@ -133,7 +142,10 @@ const Home = () => {
         <section className="pt-20">
           <div className="flex justify-center gap-8 sm:gap-4">
             <div className="border border-white h-8 sm:h-6 w-8 sm:w-6 bg-purple-700 relative top-1 sm:top-1.5"></div>
-            <h3 className="text-white text-4xl sm:text-3xl font-bold" style={Font}>
+            <h3
+              className="text-white text-4xl sm:text-3xl font-bold"
+              style={Font}
+            >
               Our Story{" "}
             </h3>
             <div className="border border-white h-8 sm:h-6 w-8 sm:w-6 bg-yellow-300 relative top-1 sm:top-1.5"></div>
@@ -162,7 +174,7 @@ const Home = () => {
               className="border-[2px] border-gray-500 h-[350px] w-[280px] sm:h-[250px] sm:w-[250px] 
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <img src={FirstIcon} alt="firsticon" className="m-auto"/>
+              <img src={FirstIcon} alt="firsticon" className="m-auto" />
               <h3 className="text-white text-center text-xl" style={Font}>
                 UI/UX Design
               </h3>
@@ -187,7 +199,7 @@ const Home = () => {
               className="border-[2px] border-gray-500 h-[350px] sm:h-[250px] sm:w-[250px] w-[280px]
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <img src={ThirdIcon} alt="thirdicon" className="m-auto pt-2"/>
+              <img src={ThirdIcon} alt="thirdicon" className="m-auto pt-2" />
               <h3 className="text-white text-center text-xl pt-4" style={Font}>
                 Full Stack <br /> Web Development
               </h3>
@@ -212,7 +224,7 @@ const Home = () => {
               className="border-[2px] border-gray-500 h-[350px] w-[300px] sm:h-[250px] sm:w-[250px] 
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <img src={SecondIcon} alt="secondicon" className="m-auto pt-2"/>
+              <img src={SecondIcon} alt="secondicon" className="m-auto pt-2" />
               <h3 className="text-white text-center text-xl pt-6" style={Font}>
                 Smart Contract <br /> Integration
               </h3>
@@ -241,7 +253,10 @@ const Home = () => {
         <section className="pt-20">
           <div className="flex justify-center gap-8 sm:gap-4">
             <div className="border border-white h-8 sm:h-6 w-8 sm:w-6 bg-yellow-300 relative top-1"></div>
-            <h3 className="text-white text-4xl sm:text-2xl font-bold" style={Font}>
+            <h3
+              className="text-white text-4xl sm:text-2xl font-bold"
+              style={Font}
+            >
               Our Process{" "}
             </h3>
             <div className="border border-white h-8 sm:h-6 w-8 sm:w-6 bg-purple-700 relative top-1"></div>
@@ -282,33 +297,105 @@ const Home = () => {
           </div>
           <div className="flex">
             <div>
-              <h3 className="text-white font-bold text-lg" style={Font}>01. Research</h3>
-              <p className="text-white">We gather information about your target audience, your<br/>
-              product or service, and your competitors. This steps helps <br/>
-              us to identify the needs and goals  of users and to<br/>
-              develop a clear  understanding of the problem that the <br/>
-              product or service is trying to solve.</p>
+              <h3 className="text-white font-bold text-lg" style={Font}>
+                01. Research
+              </h3>
+              <p className="text-white">
+                We gather information about your target audience, your
+                <br />
+                product or service, and your competitors. This steps helps{" "}
+                <br />
+                us to identify the needs and goals of users and to
+                <br />
+                develop a clear understanding of the problem that the <br />
+                product or service is trying to solve.
+              </p>
             </div>
           </div>
         </section>
         <section className="pt-20">
-          <h3 className="text-white text-center text-4xl font-bold m-auto
-           border-b-[14px] sm:border-b-[10px] border-b-purple-700 w-[350px] pb-3" style={Font}>Some of our works</h3>
-           <div className="flex flex-col p-20 gap-14">
-          <img src={firstImage} alt="" className="w-[750px] h-[500px] m-auto relative right-36"/>
-          <img src={secondImage} alt="" className="w-[750px] h-[500px] m-auto relative left-40"/>
-           </div>
-           <div className="flex float-right relative right-60 bottom-14">
+          <h3
+            className="text-white text-center text-4xl font-bold m-auto
+           border-b-[14px] sm:border-b-[10px] border-b-purple-700 w-[350px] pb-3"
+            style={Font}
+          >
+            Some of our works
+          </h3>
+          <div className="flex flex-col p-20 gap-14">
+            <img
+              src={firstImage}
+              alt=""
+              className="w-[750px] h-[500px] m-auto relative right-36"
+            />
+            <img
+              src={secondImage}
+              alt=""
+              className="w-[750px] h-[500px] m-auto relative left-40"
+            />
+          </div>
+          <div className="flex float-right relative right-60 bottom-14">
             <a
               href=""
-              className="text-center bg-purple-800 py-3 px-9 sm:py-2 sm:my-4
+              className="text-center bg-purple-600 py-3 px-9 sm:py-2 sm:my-4
               hover hover:bg-white hover:text-purple-800 text-white font-semibold sm:text-sm
              w-[220px] sm:w-[250px] h-[50px] sm:h-[40px] m-auto rounded-lg"
               style={Font}
             >
               See our works here
             </a>
-            </div>
+          </div>
+        </section>
+        <section className="pt-20">
+          <div className="flex justify-center gap-8 sm:gap-4">
+            <div className="border border-white h-8 sm:h-6 w-8 sm:w-6 bg-yellow-300 relative top-1"></div>
+            <h3
+              className="text-white text-4xl sm:text-2xl font-bold"
+              style={Font}
+            >
+              Testimonials
+            </h3>
+            <div className="border border-white h-8 sm:h-6 w-8 sm:w-6 bg-purple-700 relative top-1"></div>
+          </div>
+          <div
+            className="border-[3px] rounded-t-xl border-solid 
+             border-white h-[300px] sm:h-[300px] w-[650px] sm:w-[250px]
+             m-auto pt-4 mt-10"
+          >
+            <div></div>
+          </div>
+        </section>
+        <section className="pt-20">
+        <div className="py-3 flex flex-col sm:flex sm:flex-col sm:py-3">
+        <h3 className="font-bold text-white text-center text-4xl
+         sm:font-normal sm:text-white sm:text-md sm:text-center m-auto
+          border-b-[14px] sm:border-b-[10px] border-b-yellow-300 w-[350px] pb-3" style={Font}>
+          Leave us a message
+        </h3>
+        <div className="flex flex-col gap-4 py-12 sm:flex sm:flex-col sm:gap-3">
+          <input
+            placeholder="Enter your Email"
+            className="border-white sm:border-white bg-black sm:bg-black 
+            border-2 sm:border-2 w-[650px] sm:w-[250px] h-[60px] rounded-xl
+             sm:rounded-xl m-auto sm:m-auto placeholder:relative sm:placeholder:relative placeholder:left-3 sm:placeholder:left
+             placeholder:text-gray-500 sm:placeholder:text-gray-500 text-white sm:text-white"
+          />
+          <input
+            placeholder="Enter your message"
+            className="border-white sm:border-white bg-black sm:bg-black border-2 sm:border-2
+             w-[650px] sm:w-[250px] h-[300px] sm:h-[100px]
+             rounded-xl sm:rounded-xl m-auto sm:m-auto placeholder:relative sm:placeholder:relative
+              placeholder:bottom-[100px] sm:placeholder:bottom-[30px] placeholder:left-3 sm:placeholder:left-3
+              placeholder:text-gray-500 sm:placeholder:text-gray-500 text-white sm:text-white"
+          />
+          <a
+            href=""
+            className="text-center bg-purple-700 py-3 px-9 sm:py-2 sm:my-4 text-white font-normal sm:text-sm
+             w-[180px] sm:w-[180px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+          >
+            Send Message
+          </a>
+        </div>
+      </div>
         </section>
         <footer
           className="
@@ -324,7 +411,6 @@ const Home = () => {
         </footer>
       </div>
     </div>
-    
   );
 };
 
