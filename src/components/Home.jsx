@@ -389,9 +389,10 @@ const Home = () => {
           />
           <a
             href=""
-            className="text-center bg-purple-700 py-3 px-9 sm:py-2 sm:my-4 text-white font-normal sm:text-sm
-             w-[180px] sm:w-[180px] h-[50px] sm:h-[40px] m-auto rounded-lg"
-          >
+            className="text-center bg-purple-600 py-3 px-9 sm:py-2 sm:my-4
+            hover:text-purple-600 hover:bg-white hover:font-bold text-white font-bold sm:text-sm
+             w-[200px] sm:w-[180px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+         style={Font} >
             Send Message
           </a>
         </div>
@@ -399,7 +400,7 @@ const Home = () => {
         </section>
         <footer
           className="
-             top-[150px] sm:top-[5px]
+             top-[2px] sm:top-[5px]
              flex flex-row relative justify-center"
         >
           <Link to="/" target="_blank">

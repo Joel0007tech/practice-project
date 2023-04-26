@@ -85,14 +85,14 @@ const About = () => {
           About us
         </h3>
         <div className="flex justify-center py-5 sm:flex sm:flex-col sm:gap-10">
-          <div className="w-1/2 animate__animated animate__fadeInLeft flex flex-row justify-center sm:m-auto">
-            <img src={avatar} alt="vector" className="h-[250px] w-[350px] relative left-[60px]" />
+          <div className="w-1/2 animate__animated animate__fadeInLeft flex flex-row justify-center">
+            <img src={avatar} alt="vector" className="h-[250px] w-[350px] relative left-[60px] sm:relative sm:left-[100px]" />
           </div>
           <div className="w-1/2 animate__animated animate__fadeInRight sm:m-auto">
             <h2 className="text-white font-normal">
               We are a digital agency committed to delivering exceptional
               results for
-              <br />
+              <br/>
               our clients. Our team of experts specializes in creating
               customized
               <br />
