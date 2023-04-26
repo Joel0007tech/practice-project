@@ -74,6 +74,9 @@ const Home = () => {
               <li className="text-white font-bold text-3xl sm:text-sm sm:font-semibold">
                 <Link to="/contact">Contact Us</Link>
               </li>
+              <li className="text-white font-bold text-3xl sm:text-sm sm:font-semibold">
+                <Link to="/card">Card</Link>
+              </li>
             </ul>
           </div>
         )}
@@ -322,16 +325,29 @@ const Home = () => {
             Some of our works
           </h3>
           <div className="flex flex-col p-20 gap-14">
-            <img
-              src={firstImage}
-              alt=""
-              className="w-[750px] h-[500px] m-auto relative right-36"
-            />
-            <img
-              src={secondImage}
-              alt=""
-              className="w-[750px] h-[500px] m-auto relative left-40"
-            />
+          <div className="relative w-64 h-64">
+      <img
+        className="w-full h-full object-cover"
+        src={firstImage}
+        alt="placeholder"
+      />
+      <div className="absolute top-0 left-0 w-full h-full flex
+       items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+        <p className="text-white font-bold text-lg">Hello there</p>
+      </div>
+    </div>
+    <div className="relative w-64 h-64">
+      <img
+        className="w-full h-full object-cover"
+        src={secondImage}
+        alt="placeholder"
+      />
+      <div className="absolute top-0 left-0 w-full h-full
+       flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 flex-col">
+        <h3>How far</h3>
+        <p className="text-white font-bold text-lg">Hello there</p>
+      </div>
+    </div>
           </div>
           <div className="flex float-right relative right-60 bottom-14">
             <a

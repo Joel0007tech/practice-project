@@ -6,6 +6,7 @@ import Works from './components/Works';
 import About from './components/About';
 import Team from './components/Team';
 import Contact  from './components/Contact';
+import Card from './components/Card';
 
 
 export default function App(){
@@ -20,6 +21,7 @@ export default function App(){
           <Route path="/about" element={<About/>}/> 
           <Route path="/team" element={<Team/>}/> 
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/card" element={<Card/>}/>
      </Routes>
   </BrowserRouter>
       </div>
