@@ -327,14 +327,28 @@ const Home = () => {
           <div className="flex flex-col p-20 gap-14 items-center">
           <div className="relative w-[600px] h-[450px] right-40">
             <img
-        className="w-[600px] h-[450px] hover:w-[100px] hover:h-[200px]"
+        className="w-[600px] h-[450px]"
         src={firstImage}
         alt="placeholder"
       />
       
-      <div className="absolute top-0 left-0 w-full h-full flex
+      <div className="absolute top-40 flex gap-4 w-full h-full left-7
        items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <p className="text-white font-bold text-lg">Hello there</p>
+     <div className="flex flex-col">
+    <h3 className="text-white text-xl" style={Font}>Bulldog Billionaires</h3>
+    <p className="text-white text-sm leading-normal">Bulldog Billionaires is a collection of 2,000 <br/>
+    randomely generated NFTs that exist on <br/>
+    the Solana Blockchain.</p>
+     </div>
+     <a
+              href=""
+              className="text-center bg-purple-600 py-3 px-9 sm:py-2 sm:my-4
+              hover hover:bg-white hover:text-purple-800 text-white font-semibold sm:text-sm
+             w-[170px] sm:w-[250px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+              style={Font}
+            >
+               visit website
+            </a>
       </div>
     </div>
     <div className="relative w-[600px] h-[450px] left-40">
@@ -343,10 +357,22 @@ const Home = () => {
         src={secondImage}
         alt="placeholder"
       />
-      <div className="absolute top-0 left-0 w-full h-full
-       flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 flex-col">
-        <h3>How far</h3>
-        <p className="text-white font-bold text-lg">Hello there</p>
+      <div className="absolute top-40 gap-4 w-full h-full left-7 flex
+       items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+       <div className="flex flex-col">
+    <h3 className="text-black text-xl" style={Font}>T-connect</h3>
+    <p className="text-black text-sm leading-normal">T-connect is an NFT marketplace platform <br/>
+    where users can lend and rent NFTs</p>
+     </div>
+     <a
+              href=""
+              className="text-center bg-purple-600 py-3 px-9 sm:py-2 sm:my-4
+              hover hover:bg-white hover:text-purple-800 text-white font-semibold sm:text-sm
+             w-[170px] sm:w-[250px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+              style={Font}
+            >
+               visit website
+            </a>
       </div>
     </div>
           </div>
