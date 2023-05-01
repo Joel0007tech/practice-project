@@ -324,10 +324,11 @@ const Home = () => {
           >
             Some of our works
           </h3>
-          <div className="flex flex-col p-20 gap-14 items-center">
-          <div className="relative w-[600px] h-[450px] right-40">
+          <div className="flex flex-col p-20 gap-14 items-center ">
+          <div className="relative w-[600px] h-[450px] right-40
+           transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl">
             <img
-        className="w-[600px] h-[450px]"
+        className="w-[600px] h-[450px] hover:shadow-sm"
         src={firstImage}
         alt="placeholder"
       />
@@ -351,17 +352,21 @@ const Home = () => {
             </a>
       </div>
     </div>
-    <div className="relative w-[600px] h-[450px] left-40">
+    <div className="relative w-[600px] h-[450px] left-40 
+    transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-black hover:opacity-50
+    ">
+      <div>
       <img
         className="w-[600px] h-[450px]"
         src={secondImage}
         alt="placeholder"
       />
+    </div>
       <div className="absolute top-40 gap-4 w-full h-full left-7 flex
-       items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+       items-center justify-center opacity-0 hover:opacity-50 transition-opacity duration-300 hover:bg-opacity-0">
        <div className="flex flex-col">
-    <h3 className="text-black text-xl" style={Font}>T-connect</h3>
-    <p className="text-black text-sm leading-normal">T-connect is an NFT marketplace platform <br/>
+    <h3 className="text-xl text-white" style={Font}>T-connect</h3>
+    <p className="text-sm leading-normal text-white">T-connect is an NFT marketplace platform <br/>
     where users can lend and rent NFTs</p>
      </div>
      <a

@@ -20,8 +20,7 @@ const Team = () => {
               <div className="pb-4 pt-3">
       <FaStream
         className="cursor-pointer sm:cursor-pointer text-white sm:text-white
-        sm:text-xl sm:float-right sm:mr-8 sm:mt-2 sm:font-normal
-     
+        sm:text-xl sm:float-right sm:mr-8 sm:mt-2 sm:font-normal  
     "
     onClick={() => setOpen(!open)}/>
        <img src={Logo} alt="logo" className='h-[30px] w-[80px] ml-6'/>
