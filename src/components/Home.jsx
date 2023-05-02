@@ -16,6 +16,14 @@ import objectSecond from "../assets/Ellipse 62.png";
 import firstImage from "../assets/Mask group.png";
 import secondImage from "../assets/Mask group (1).png";
 
+
+function changeColor() {
+  var colors = ["orange", "purple"];
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.getElementById("my-text").style.color = randomColor;
+}
+setInterval(changeColor, 1000); 
+
 const Home = () => {
   const [open, setOpen] = useState(false);
   const color = {
@@ -118,6 +126,7 @@ const Home = () => {
               <h3
                 className="text-white text-2xl font-semibold sm:text-center"
                 style={Font}
+                id="my-text"
               >
                 Let's Play!
               </h3>
@@ -326,7 +335,7 @@ const Home = () => {
           </h3>
           <div className="flex flex-col p-20 gap-14 items-center ">
           <div className="relative w-[600px] h-[450px] right-40
-           transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl">
+           transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-black hover:opacity-50">
             <img
         className="w-[600px] h-[450px] hover:shadow-sm"
         src={firstImage}
@@ -353,7 +362,7 @@ const Home = () => {
       </div>
     </div>
     <div className="relative w-[600px] h-[450px] left-40 
-    transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-black hover:opacity-50
+    transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  hover:bg-black hover:opacity-50
     ">
       <div>
       <img
@@ -363,21 +372,22 @@ const Home = () => {
       />
     </div>
       <div className="absolute top-40 gap-4 w-full h-full left-7 flex
-       items-center justify-center opacity-0 hover:opacity-50 transition-opacity duration-300 hover:bg-opacity-0">
-       <div className="flex flex-col">
+       items-center justify-center opacity-0 hover:opacity-50 transition-opacity duration-300">
+       <div className="flex flex-col bg-black">
     <h3 className="text-xl text-white" style={Font}>T-connect</h3>
     <p className="text-sm leading-normal text-white">T-connect is an NFT marketplace platform <br/>
     where users can lend and rent NFTs</p>
      </div>
      <a
               href=""
-              className="text-center bg-purple-600 py-3 px-9 sm:py-2 sm:my-4
+              className="text-center bg-purple-900 py-3 px-9 sm:py-2 sm:my-4
               hover hover:bg-white hover:text-purple-800 text-white font-semibold sm:text-sm
              w-[170px] sm:w-[250px] h-[50px] sm:h-[40px] m-auto rounded-lg"
               style={Font}
             >
                visit website
             </a>
+    
       </div>
     </div>
           </div>
