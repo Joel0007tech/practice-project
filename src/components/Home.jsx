@@ -18,8 +18,8 @@ import secondImage from "../assets/Mask group (1).png";
 
 
 function changeColor() {
-  var colors = ["orange", "purple"];
-  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  var colors = ["orange", "yellow"];
+  var randomColor = colors[Math.floor(Math.random() * colors.length())];
   document.getElementById("my-text").style.color = randomColor;
 }
 setInterval(changeColor, 1000); 
