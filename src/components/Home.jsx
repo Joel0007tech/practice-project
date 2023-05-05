@@ -391,12 +391,12 @@ const Home = () => {
       </div>
     </div>
           </div>
-          <div className="flex float-right relative right-60 bottom-14">
+          <div className="flex float-right relative right-60 bottom-14 sm:right-12">
             <a
               href=""
               className="text-center bg-purple-600 py-3 px-9 sm:py-2 sm:my-4
               hover hover:bg-white hover:text-purple-800 text-white font-semibold sm:text-sm
-             w-[220px] sm:w-[250px] h-[50px] sm:h-[40px] m-auto rounded-lg"
+             w-[220px] sm:w-[210px] h-[50px] sm:h-[40px] m-auto rounded-lg"
               style={Font}
             >
               See our works here
