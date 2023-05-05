@@ -176,8 +176,8 @@ const Home = () => {
         <section className="pt-20">
           <h3
             style={Font}
-            className="text-white text-center text-4xl sm:2xl font-bold m-auto
-             border-b-[14px] sm:border-b-[10px] border-b-yellow-300 w-[250px] pb-3"
+            className="text-white text-center text-4xl sm:text-2xl font-bold m-auto
+             border-b-[14px] sm:border-b-[10px] border-b-yellow-300 w-[250px] sm:w-[200px] pb-3"
           >
             What we do
           </h3>
@@ -186,7 +186,7 @@ const Home = () => {
               className="border-[2px] border-gray-500 h-[350px] w-[280px] sm:h-[250px] sm:w-[250px] 
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <img src={FirstIcon} alt="firsticon" className="m-auto" />
+              <img src={FirstIcon} alt="firsticon" className="m-auto sm:h-10 w-10"/>
               <h3 className="text-white text-center text-xl" style={Font}>
                 UI/UX Design
               </h3>
@@ -208,11 +208,11 @@ const Home = () => {
               </p>
             </div>
             <div
-              className="border-[2px] border-gray-500 h-[350px] sm:h-[250px] sm:w-[250px] w-[280px]
+              className="border-[2px] border-gray-500 h-[350px] sm:h-[300px] sm:w-[250px] w-[280px]
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <img src={ThirdIcon} alt="thirdicon" className="m-auto pt-2" />
-              <h3 className="text-white text-center text-xl pt-4" style={Font}>
+              <img src={ThirdIcon} alt="thirdicon" className="m-auto pt-2 sm:w-10 sm:h-10" />
+              <h3 className="text-white text-center text-xl sm:text-xl pt-4" style={Font}>
                 Full Stack <br /> Web Development
               </h3>
               <p className="text-white leading-normal pt-4 text-sm text-center sm:text-sm sm:pt-2">
@@ -233,11 +233,11 @@ const Home = () => {
               </p>
             </div>
             <div
-              className="border-[2px] border-gray-500 h-[350px] w-[300px] sm:h-[250px] sm:w-[250px] 
+              className="border-[2px] border-gray-500 h-[350px] w-[300px] sm:h-[300px] sm:w-[250px] 
                    hover:border-purple-800 hover:border-[5px] sm:m-auto"
             >
-              <img src={SecondIcon} alt="secondicon" className="m-auto pt-2" />
-              <h3 className="text-white text-center text-xl pt-6" style={Font}>
+              <img src={SecondIcon} alt="secondicon" className="m-auto pt-2 sm:w-10" />
+              <h3 className="text-white text-center text-xl pt-6 sm:pt-2" style={Font}>
                 Smart Contract <br /> Integration
               </h3>
               <p className="text-white leading-normal pt-4 text-sm text-center sm:text-sm sm:pt-2">
@@ -327,8 +327,8 @@ const Home = () => {
         </section>
         <section className="pt-20">
           <h3
-            className="text-white text-center text-4xl font-bold m-auto
-           border-b-[14px] sm:border-b-[10px] border-b-purple-700 w-[350px] pb-3"
+            className="text-white text-center text-4xl sm:text-2xl font-bold m-auto
+           border-b-[14px] sm:border-b-[10px] border-b-purple-700 w-[350px] sm:w-[250px] pb-3"
             style={Font}
           >
             Some of our works
@@ -425,8 +425,8 @@ const Home = () => {
         <section className="pt-20">
         <div className="py-3 flex flex-col sm:flex sm:flex-col sm:py-3">
         <h3 className="font-bold text-white text-center text-4xl
-         sm:font-normal sm:text-white sm:text-md sm:text-center m-auto
-          border-b-[14px] sm:border-b-[10px] border-b-yellow-300 w-[350px] pb-3" style={Font}>
+         sm:font-normal sm:text-white sm:text-2xl sm:text-center m-auto
+          border-b-[14px] sm:border-b-[10px] border-b-yellow-300 w-[350px] sm:w-[250px] pb-3" style={Font}>
           Leave us a message
         </h3>
         <div className="flex flex-col gap-4 py-12 sm:flex sm:flex-col sm:gap-3">
