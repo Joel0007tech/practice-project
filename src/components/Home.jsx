@@ -22,7 +22,7 @@ function changeColor() {
   var randomColor = colors[Math.floor(Math.random() * colors.length())];
   document.getElementById("my-text").style.color = randomColor;
 }
-setInterval(changeColor, 1000); 
+setInterval(changeColor, 3000); 
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -84,6 +84,9 @@ const Home = () => {
               </li>
               <li className="text-white font-bold text-3xl sm:text-sm sm:font-semibold">
                 <Link to="/card">Card</Link>
+              </li>
+              <li className="text-white font-bold text-3xl sm:text-sm sm:font-semibold">
+                <Link to="/puzzle">Puzle</Link>
               </li>
             </ul>
           </div>
