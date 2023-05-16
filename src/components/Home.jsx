@@ -139,7 +139,7 @@ const Home = () => {
              border-white h-[350px] sm:h-[300px] w-[450px] sm:w-[250px]
              m-auto pt-4"
             >
-              <img src={avatar} alt="ava" className="m-auto" />
+              <img src="" className="m-auto" />
             </div>
             <div className=" relative right-[300px] top-[150px] sm:top-3 sm:left-[80px]">
               <h3 className="text-white text-2xl font-semibold" style={Font}>
@@ -344,7 +344,6 @@ const Home = () => {
         src={firstImage}
         alt="placeholder"
       />
-      
       <div className="absolute top-40 flex gap-4 w-full h-full left-7
        items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
      <div className="flex flex-col">
